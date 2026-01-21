@@ -1,6 +1,7 @@
 import CategorySidebar from "../features/category/CategorySideBar";
 import HeroSlider from "../features/home/HeroSlider";
 import CategoryWrapper from "../features/category/CategoryWrapper";
+import ProductTabs from "../features/product/ProductTabs";
 
 const Home = () => {
   return (
@@ -30,9 +31,7 @@ const Home = () => {
         <div className="">
           {/* Additional home page content can go here */}
           <div className="text-center p-8">
-            <p className="text-gray-400">WOODEN ACCESSORIES</p>
-            <h1 className="font-bold text-2xl p-4">FEATURED PRODUCTS</h1>
-            <p className="">Visit our shop to see amazing creations from our designers.</p>
+            <ProductTabs/>
           </div>
         </div>
       </div>
