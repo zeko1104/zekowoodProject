@@ -27,6 +27,7 @@ export const products = [
     image: drawer,
     image2: drawer2,
     tags: ["best", "sale"],
+    category: "Furniture",
   },
   {
     id: 2,
@@ -35,6 +36,7 @@ export const products = [
     image: smartWatch,
     image2: smartWatch2,
     tags: ["best"],
+    category: "Accessories,Clocks",
   },
   {
     id: 3,
@@ -43,6 +45,7 @@ export const products = [
     image: jChair,
     image2: jChair2,
     tags: ["featured", "new"],
+    category: "Furniture",
   },
   {
     id: 4,
@@ -51,6 +54,7 @@ export const products = [
     image: woodenDec,
     image2: woodenDec2,
     tags: ["sale"],
+    category: "Decorations",
   },
   {
     id: 5,
@@ -59,6 +63,7 @@ export const products = [
     image: wineBottle,
     image2: wineBottle2,
     tags: ["best", "sale"],
+    category: "Decorations,Lighting",
   },
   {
     id: 6,
@@ -67,6 +72,7 @@ export const products = [
     image: phoneDock,
     image2: phoneDock2,
     tags: ["best"],
+    category: "Accessories",
   },
   {
     id: 7,
@@ -75,6 +81,7 @@ export const products = [
     image: nChair,
     image2: nChair2,
     tags: ["featured", "new"],
+    category: "Furniture",
   },
   {
     id: 8,
@@ -83,6 +90,7 @@ export const products = [
     image: lamp,
     image2: lamp2,
     tags: ["sale"],
+    category: "Lighting",
   },
   {
     id: 9,
@@ -91,6 +99,7 @@ export const products = [
     image: clock,
     image2: clock2,
     tags: ["featured"],
+    category: "Clocks",
   },
   {
     id: 10,
@@ -99,5 +108,6 @@ export const products = [
     image: penguinToy,
     image2: penguinToy2,
     tags: ["featured"],
+    category: "Toys",
   },
 ];

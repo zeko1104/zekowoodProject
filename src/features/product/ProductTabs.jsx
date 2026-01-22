@@ -36,7 +36,7 @@ const ProductTabs = () => {
             onClick={() => setActiveTab(tab.key)}
             className={`
               text-sm font-semibold tracking-wide
-              pb-2 transition
+              pb-2 transition cursor-pointer
               ${
                 activeTab === tab.key
                   ? "text-black border-b-2 border-[#83B735]"
