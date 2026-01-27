@@ -2,6 +2,7 @@ import CategorySidebar from "../features/category/CategorySideBar";
 import HeroSlider from "../features/home/HeroSlider";
 import CategoryWrapper from "../features/category/CategoryWrapper";
 import ProductTabs from "../features/product/ProductTabs";
+import AdSlider from "../features/ads/AdSlider";
 
 const Home = () => {
   return (
@@ -34,6 +35,10 @@ const Home = () => {
             <ProductTabs/>
           </div>
         </div>
+      </div>
+      <div>
+        {/* Additional home page content can go here */}
+        <AdSlider />
       </div>
     </section>
   );
