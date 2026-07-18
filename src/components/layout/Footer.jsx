@@ -1,11 +1,18 @@
-
+import Container from "./Container";
 
 const Footer = () => {
   return (
     <footer>
-      <h1 className="text-blue-500 text-bold uppercase">Shop Footer</h1>
+      {/* Footer Up */}
+      <Container>
+        <section className="">
+          <div className="">
+            <h1 className="text-blue-500 text-bold uppercase">Shop Footer</h1>
+          </div>
+        </section>
+      </Container>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
