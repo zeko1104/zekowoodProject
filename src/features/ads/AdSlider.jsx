@@ -44,12 +44,11 @@ const HeroSlider = () => {
         <SwiperSlide key={slide.id}>
           {({ isActive }) => (
             <div className="relative w-full h-125 bg-[#83B735]">
-              
               {/* IMAGE */}
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="w-96 h-96 object-contain absolute top-1/2 left-0 -translate-y-1/2"
+                className="w-96 h-96 object-contain absolute top-1/2 left-0 ml-20 -translate-y-1/2"
               />
 
               {/* CONTENT */}
@@ -73,9 +72,16 @@ const HeroSlider = () => {
                   {slide.text}
                 </motion.p>
 
+                <motion.h1
+                  variants={textItem}
+                  className="text-5xl mb-6 max-w-md text-white"
+                >
+                  {slide.price}
+                </motion.h1>
+
                 <motion.button
                   variants={textItem}
-                  className="bg-[#83B735] px-6 py-3 font-semibold hover:bg-[#6ea42c] transition cursor-pointer"
+                  className="bg-[#83B735] px-6 py-3 font-semibold hover:bg-white hover:text-black transition cursor-pointer border border-white"
                 >
                   {slide.button}
                 </motion.button>

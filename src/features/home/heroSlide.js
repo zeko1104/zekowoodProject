@@ -39,7 +39,7 @@ export const adSlides = [
     material: "Leather,Wood, Metal",
     price: "$1999.00",
     text: "Up to 50% off on selected items",
-    button: "Shop Now",
+    button: "ADD TO CART",
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ export const adSlides = [
     material: "Wood, Metal",
     price: "$240.00",
     text: "Check out the latest furniture collection",
-    button: "Explore",
+    button: "ADD TO CART",
   },
     {
     id: 3,
@@ -59,6 +59,6 @@ export const adSlides = [
     material: "Wood, Metal", 
     price: "$299.00",
     text: "Get exclusive deals on premium furniture",
-    button: "Discover",
+    button: "ADD TO CART",
   },
 ]
