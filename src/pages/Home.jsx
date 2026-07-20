@@ -1,4 +1,4 @@
-import CategorySidebar from "../features/category/CategorySideBar";
+import CategorySidebar from "../features/category/CategorySidebar";
 import HeroSlider from "../features/home/HeroSlider";
 import CategoryWrapper from "../features/category/CategoryWrapper";
 import ProductTabs from "../features/product/ProductTabs";
