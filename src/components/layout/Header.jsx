@@ -41,7 +41,7 @@ const Header = () => {
                 FREE SHIPPING FOR ALL ORDERS OF $150
               </h1>
 
-              <ul className="flex gap-3">
+              <ul className="flex gap-3 ">
                 <li>
                   <a className="text-white" href="#">
                     <FaFacebookF />
