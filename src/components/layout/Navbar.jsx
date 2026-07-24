@@ -3,6 +3,7 @@ import Container from "./Container";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { FaShoppingBag, FaUser, FaHeart } from "react-icons/fa";
 import { IoIosGitCompare } from "react-icons/io";
+import { useState } from "react";
 
 const Navbar = () => {
   return (
@@ -15,7 +16,7 @@ const Navbar = () => {
           </div>
 
           {/* CENTER - SEARCH */}
-          <div className="flex-1 flex justify-center max-sm:hidden">
+          <div className="flex-1 flex justify-center">
             <Input />
             <button className="border border-[#D9D9D9] p-2 w-10 cursor-pointer text-center flex justify-center items-center ">
               <FaMagnifyingGlass className="text-gray-500" />
@@ -25,12 +26,12 @@ const Navbar = () => {
           {/* RIGHT */}
           <div className="flex-1 flex justify-end gap-6 ">
             {/* USER */}
-            <div className="relative cursor-pointer max-sm:hidden">
+            <div className="relative cursor-pointer ">
               <FaUser className="text-2xl text-gray-500 hover:opacity-50" />
             </div>
 
             {/* WISHLIST */}
-            <div className="relative cursor-pointer max-sm:hidden">
+            <div className="relative cursor-pointer">
               <FaHeart className="text-2xl text-gray-500 hover:opacity-50" />
               <span className="absolute -top-2 -right-2 bg-[#83B735] text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
                 0
@@ -38,7 +39,7 @@ const Navbar = () => {
             </div>
 
             {/* COMPARE */}
-            <div className="relative cursor-pointer max-sm:hidden">
+            <div className="relative cursor-pointer">
               <IoIosGitCompare className="text-2xl text-gray-500 hover:opacity-50" />
               <span className="absolute -top-2 -right-2 bg-[#83B735] text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
                 0
