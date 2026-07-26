@@ -2,7 +2,9 @@ import React from 'react'
 
 const MobileSideBar = () => {
   return (
-    <div>MobileSideBar</div>
+    <div className='md:hidden'>
+      MobileSideBar
+    </div>
   )
 }
 
