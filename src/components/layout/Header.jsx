@@ -17,7 +17,7 @@ const Header = () => {
         <Container>
           <div className="p-2 flex justify-between items-center">
             {/* LEFT */}
-            <div className="flex">
+            <div className="flex max-sm:hidden">
               <div className="text-white border-x pr-2 mr-2">
                 <select className="bg-transparent outline-none">
                   <option className="text-gray-500">EN</option>
@@ -36,12 +36,12 @@ const Header = () => {
             </div>
 
             {/* CENTER */}
-            <div className="hidden md:flex justify-between w-7/12">
-              <h1 className="text-white  uppercase text-sm">
+            <div className="w-full md:w-7/12 flex justify-center md:justify-between items-center">
+              <h1 className="text-white uppercase text-sm text-center md:text-left">
                 FREE SHIPPING FOR ALL ORDERS OF $150
               </h1>
 
-              <ul className="flex gap-3 ">
+              <ul className="flex gap-3 max-sm:hidden">
                 <li>
                   <a className="text-white" href="#">
                     <FaFacebookF />
@@ -66,7 +66,7 @@ const Header = () => {
             </div>
 
             {/* RIGHT */}
-            <div className="flex">
+            <div className="flex max-sm:hidden">
               <div className="text-white border-x pr-2 mr-2">
                 <button className="flex items-center gap-2 ">
                   <FaEnvelope /> NEWSLETTER
