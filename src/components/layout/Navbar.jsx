@@ -5,10 +5,19 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 import { FaShoppingBag, FaUser, FaHeart } from "react-icons/fa";
 import { IoIosGitCompare } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  
+  useEffect(() => {
+    if (isSidebarOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isSidebarOpen]);
 
   return (
     <nav className="w-full border-b border-[#E8E8E8]">
@@ -38,7 +47,7 @@ const Navbar = () => {
               ZEKOWOOD
             </h1>
 
-            {/*SEARCH - DESKTOP */}
+            {/* SEARCH - DESKTOP */}
             <div className="hidden md:flex w-full max-w-md justify-center">
               <Input />
               <button className="border border-[#D9D9D9] p-2 w-10 cursor-pointer text-center flex justify-center items-center">
@@ -69,7 +78,7 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* CART - MOBILE AND DESKTOP*/}
+            {/* CART - MOBILE AND DESKTOP */}
             <div className="relative cursor-pointer">
               <FaShoppingBag className="text-xl sm:text-2xl text-gray-500 hover:opacity-50" />
               <span className="absolute -top-2 -right-2 bg-[#83B735] text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">

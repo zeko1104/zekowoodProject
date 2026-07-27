@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 const CategorySidebar = () => {
   return (
-    <aside className="w-65 bg-white border border-[#E8E8E8] z-50">
+    <aside className="w-65 bg-white border border-[#E8E8E8] z-50 max-sm:hidden">
       
       {/* HEADER */}
       <div className="bg-[#83B735] text-white px-4 py-3 font-semibold">
