@@ -4,7 +4,7 @@ const Input = () => {
   return (
     <>
       <input
-        className="border border-[#D9D9D9] focus:outline-0 w-125 p-2 max-sm:w-60"
+        className="border border-[#D9D9D9] focus:outline-0 w-125 p-2 max-sm:w-62"
         type="text"
       />
     </>
