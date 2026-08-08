@@ -12,8 +12,9 @@ const ProductCard = ({ product }) => {
         transition-all duration-300
         group
         hover:shadow-2xl
-        hover:scale-[1.04]
+        md:hover:scale-[1.04]
         rounded-lg
+        max-sm:border
       "
     >
       {/* IMAGE */}
@@ -24,7 +25,7 @@ const ProductCard = ({ product }) => {
           className="
             absolute inset-0 w-full h-full object-cover
             transition-opacity duration-500
-            group-hover:opacity-0
+            md:group-hover:opacity-0
             cursor-pointer
           "
         />
@@ -36,7 +37,7 @@ const ProductCard = ({ product }) => {
             absolute inset-0 w-full h-full object-cover
             opacity-0
             transition-all duration-700 ease-out
-            group-hover:opacity-100 group-hover:scale-105
+            md:group-hover:opacity-100 md:group-hover:scale-105
             cursor-pointer
           "
         />
@@ -49,15 +50,17 @@ const ProductCard = ({ product }) => {
       </span>
       <p className="text-[#83B735] font-bold mt-1">${product.price}</p>
 
-      {/* HOVER CONTENT */}
+      {/* HOVER / MOBILE CONTENT */}
       <div
         className="
           overflow-hidden
-          max-h-0
-          opacity-0
           transition-all duration-500 ease-out
-          group-hover:max-h-[220px]
-          group-hover:opacity-100
+          max-h-[220px]
+          opacity-100
+          md:max-h-0
+          md:opacity-0
+          md:group-hover:max-h-[220px]
+          md:group-hover:opacity-100
         "
       >
         <p className="text-sm text-gray-500 mt-3 px-4 leading-relaxed">
@@ -71,7 +74,7 @@ const ProductCard = ({ product }) => {
             className="
               w-10 h-10
               flex items-center justify-center
-              rounded-[50%]
+              rounded-full
               border
               text-gray-500
               hover:text-white hover:bg-[#83B735]
@@ -86,15 +89,15 @@ const ProductCard = ({ product }) => {
           <Link to={`/product/${product.id}`}>
             <button
               className="
-              px-6 py-2
-              bg-[#83B735]
-              text-white
-              text-xs font-semibold
-              rounded-full
-              hover:bg-[#6fa02e]
-              transition
-              cursor-pointer
-            "
+                px-6 py-2
+                bg-[#83B735]
+                text-white
+                text-xs font-semibold
+                rounded-full
+                hover:bg-[#6fa02e]
+                transition
+                cursor-pointer
+              "
             >
               SELECT OPTIONS
             </button>
@@ -105,7 +108,7 @@ const ProductCard = ({ product }) => {
             className="
               w-10 h-10
               flex items-center justify-center
-              rounded-[50%]
+              rounded-full
               border
               text-gray-500
               hover:text-white hover:bg-[#83B735]
