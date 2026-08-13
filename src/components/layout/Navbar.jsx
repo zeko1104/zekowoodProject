@@ -35,7 +35,7 @@ const Navbar = () => {
             </button>
 
             {/* LOGO - DESKTOP LEFT */}
-            <h1 className="hidden md:block text-2xl sm:text-3xl font-bold">
+            <h1 className="hidden md:block  sm:text-3xl text-3xl font-extrabold tracking-wider text-[#1A1A1A]">
               ZEKOWOOD
             </h1>
           </div>
@@ -43,7 +43,7 @@ const Navbar = () => {
           {/* CENTER SECTION (MOBILE: CENTER LOGO, DESKTOP: SEARCH) */}
           <div className="flex justify-center md:flex-1">
             {/* LOGO MOBILE */}
-            <h1 className="md:hidden text-2xl font-bold text-center">
+            <h1 className="md:hidden  text-center text-3xl font-extrabold tracking-wider text-[#1A1A1A]">
               ZEKOWOOD
             </h1>
 
