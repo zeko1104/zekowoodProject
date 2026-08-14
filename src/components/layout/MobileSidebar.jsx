@@ -1,7 +1,9 @@
 import React from "react";
 import Input from "../common/Input";
+import MobileCategory from "../../features/category/MobileCategory";
 import { IoMdClose } from "react-icons/io";
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import { ImOpt } from "react-icons/im";
 
 const MobileSideBar = ({ isOpen, onClose }) => {
   return (
@@ -37,30 +39,9 @@ const MobileSideBar = ({ isOpen, onClose }) => {
           </div>
 
           {/* NAV LINK */}
-          <nav className="mt-6">
-            <ul className="flex flex-col gap-4 font-medium text-gray-700">
-              <li>
-                <a href="#" className="hover:text-[#83B735] transition-colors">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-[#83B735] transition-colors">
-                  Store
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-[#83B735] transition-colors">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-[#83B735] transition-colors">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <div className="">
+            <MobileCategory/>
+          </div>
         </div>
 
         <div className="pt-4 border-t border-gray-200 text-sm text-gray-500">
