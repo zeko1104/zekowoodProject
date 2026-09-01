@@ -1,4 +1,3 @@
-import Input from "../common/Input";
 import Container from "./Container";
 import MobileSideBar from "./MobileSidebar";
 import { FaMagnifyingGlass } from "react-icons/fa6";
@@ -6,6 +5,7 @@ import { FaShoppingBag, FaUser, FaHeart } from "react-icons/fa";
 import { IoIosGitCompare } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState, useEffect } from "react";
+import SearchBar from "../common/SearchBar";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -49,7 +49,7 @@ const Navbar = () => {
 
             {/* SEARCH - DESKTOP */}
             <div className="hidden md:flex w-full max-w-md justify-center">
-              <Input />
+              <SearchBar />
               <button className="border border-[#D9D9D9] p-2 w-10 cursor-pointer text-center flex justify-center items-center">
                 <FaMagnifyingGlass className="text-gray-500" />
               </button>

@@ -1,9 +1,9 @@
 import React from "react";
-import Input from "../common/Input";
 import MobileCategory from "../../features/category/MobileCategory";
 import { IoMdClose } from "react-icons/io";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { ImOpt } from "react-icons/im";
+import SearchBar from "../common/SearchBar";
 
 const MobileSideBar = ({ isOpen, onClose }) => {
   return (
@@ -30,7 +30,7 @@ const MobileSideBar = ({ isOpen, onClose }) => {
             {/* Search Input and Button Container */}
             <div className="flex w-full min-w-0">
               <div className="flex-1 min-w-0">
-                <Input placeholder="Search Products..." />
+                <SearchBar placeholder="Search Products..." />
               </div>
               <button className="border border-l-0 border-[#D9D9D9] p-2 w-10  text-center flex justify-center items-center shrink-0">
                 <FaMagnifyingGlass className="text-gray-500 cursor-pointer" />
