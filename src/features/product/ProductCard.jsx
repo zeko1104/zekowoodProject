@@ -86,7 +86,7 @@ const ProductCard = ({ product }) => {
           </button>
 
           {/* BUTTON */}
-          <Link to={`/product/${product.id}`}>
+          <Link to={`/product/detail/${product.id}`}>
             <button
               className="
                 px-6 py-2
