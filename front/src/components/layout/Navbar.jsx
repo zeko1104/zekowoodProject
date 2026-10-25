@@ -6,11 +6,11 @@ import { IoIosGitCompare } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState, useEffect } from "react";
 import SearchBar from "../common/SearchBar";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  
   useEffect(() => {
     if (isSidebarOpen) {
       document.body.style.overflow = "hidden";
@@ -23,7 +23,6 @@ const Navbar = () => {
     <nav className="w-full border-b border-[#E8E8E8]">
       <Container>
         <div className="flex items-center justify-between py-6">
-          
           {/* LEFT SECTION (MOBILE: HAMBURGER, DESKTOP: LOGO) */}
           <div className="flex items-center gap-4 md:flex-1">
             <button
@@ -59,9 +58,11 @@ const Navbar = () => {
           {/* RIGHT SECTION - ICONS */}
           <div className="flex items-center justify-end gap-4 sm:gap-6 md:flex-1">
             <div className="hidden md:flex items-center gap-6">
-              <div className="relative cursor-pointer">
-                <FaUser className="text-2xl text-gray-500 hover:opacity-50" />
-              </div>
+              <Link to={`/profile`}>
+                <div className="relative cursor-pointer">
+                  <FaUser className="text-2xl text-gray-500 hover:opacity-50" />
+                </div>
+              </Link>
 
               <div className="relative cursor-pointer">
                 <FaHeart className="text-2xl text-gray-500 hover:opacity-50" />
@@ -86,7 +87,6 @@ const Navbar = () => {
               </span>
             </div>
           </div>
-
         </div>
       </Container>
 
